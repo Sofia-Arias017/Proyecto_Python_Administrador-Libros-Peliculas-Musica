@@ -1,4 +1,4 @@
-from design.programa.menus import FindAll_libro , saveaLL_libro,findAll_pe
+from desing import FindAll_libro , saveaLL_libro,findAll_pe
 def menu_de_opciones_añadir(): #menu_de_opciones_añadir
     print("""
 ===========================================
