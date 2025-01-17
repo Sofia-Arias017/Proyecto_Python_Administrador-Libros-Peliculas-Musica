@@ -1,4 +1,4 @@
-# Importación de módulos necesarios
+
 from desing.general_menus import main_menu
 from desing.books import FindAll_libro, saveaLL_libro
 

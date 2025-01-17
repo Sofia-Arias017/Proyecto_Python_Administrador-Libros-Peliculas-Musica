@@ -32,8 +32,8 @@ def list_books():
             print(f"- {book['title']} | Autor: {book['author']} | Género: {book['genre']} | Valoración: {book.get('rating', 'N/A')}")
 
 def FindAll_libro():
-    return load_books()  # Devuelve todos los libros
+    return load_books()  
 
-# Función 'saveaLL_libro' agregada
+
 def saveaLL_libro(data):
-    save_books(data)  # Llama a 'save_books'
+    save_books(data)  
