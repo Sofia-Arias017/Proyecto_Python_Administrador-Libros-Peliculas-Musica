@@ -41,7 +41,7 @@ def add_new_item():
         genre = input("Género: ")
         rating = input("Valoración (opcional): ")
         movies = load_movies()
-        movies.append(Movie(title, director, genre, rating))
+        movies.append(movies(title, director, genre, rating))
         save_movies(movies)
     elif option == "3":
         title = input("Título: ")
