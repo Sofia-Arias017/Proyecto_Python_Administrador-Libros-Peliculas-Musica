@@ -1,5 +1,25 @@
-from desing import FindAll_libro , saveaLL_libro,findAll_pe
-def menu_de_opciones_añadir(): #menu_de_opciones_añadir
+from desing.books import FindAll_libro, saveaLL_libro
+from desing.music import findAll_pe, search_by_artist, search_by_genre  # Asegúrate de que las funciones estén importadas correctamente
+
+def main_menu():  # Definimos la función main_menu
+    print("""
+===========================================
+        Menú Principal
+===========================================
+1. Añadir un Elemento
+2. Ver Todos los Elementos
+3. Buscar un Elemento
+4. Editar un Elemento
+5. Eliminar un Elemento
+6. Ver Elementos por Categoría
+7. Guardar y Cargar Colección
+8. Salir
+===========================================
+          """)
+    opc = input("Selecciona una opción: ")
+    return opc
+
+def menu_de_opciones_añadir():  # Menu de añadir elementos
     print("""
 ===========================================
         Añadir un Nuevo Elemento
@@ -11,10 +31,10 @@ def menu_de_opciones_añadir(): #menu_de_opciones_añadir
 4. Regresar al Menú Principal
 ===========================================
           """)
-    opcion_1 = (input())
+    opcion_1 = input()
     return opcion_1
 
-def menu_opcion_todos_elementos(): #menu_opcion_todos_elementos
+def menu_opcion_todos_elementos():  # Ver todos los elementos
     print("""
 ===========================================
         Ver Todos los Elementos
@@ -26,10 +46,12 @@ def menu_opcion_todos_elementos(): #menu_opcion_todos_elementos
 4. Regresar al Menú Principal
 ===========================================
           """)
-    opc=(input())
+    opc = input()
+    if opc == "3":
+        findAll_pe()  # Llama a la función para mostrar toda la música
     return opc 
 
-def menu_opcion_buscar_un_elemento(): #menu_opcion_buscar_un_elemento
+def menu_opcion_buscar_un_elemento():  # Buscar un elemento
     print("""
 ===========================================
         Buscar un Elemento
@@ -41,10 +63,14 @@ def menu_opcion_buscar_un_elemento(): #menu_opcion_buscar_un_elemento
 4. Regresar al Menú Principal
 ===========================================
             """)
-    opc = input(())
+    opc = input()
+    if opc == "2":
+        search_by_artist()  # Llama a la búsqueda por artista
+    elif opc == "3":
+        search_by_genre()  # Llama a la búsqueda por género
     return opc
 
-def menu_opcion_editar_un_elemento(): #menu_opcion_editar_un_elemento
+def menu_opcion_editar_un_elemento():  # Editar un elemento
     print("""
 ===========================================
         Editar un Elemento
@@ -57,10 +83,10 @@ def menu_opcion_editar_un_elemento(): #menu_opcion_editar_un_elemento
 5. Regresar al Menú Principal
 ===========================================
           """)
-    opc = input(())
+    opc = input()
     return opc
 
-def  menu_opcion_eliminar_un_elemento(): #menu_opcion_eliminar_un_elemento
+def menu_opcion_eliminar_un_elemento():  # Eliminar un elemento
     print("""
 ===========================================
         Eliminar un Elemento
@@ -71,9 +97,10 @@ def  menu_opcion_eliminar_un_elemento(): #menu_opcion_eliminar_un_elemento
 3. Regresar al Menú Principal
 ===========================================
           """)
-    opc = input(())
+    opc = input()
     return opc
-def menu_opcion_ver_elemento_por_categoria(): #menu_opcion_ver_elemento_por_categoria
+
+def menu_opcion_ver_elemento_por_categoria():  # Ver elementos por categoría
     print("""
 ===========================================
         Ver Elementos por Categoría
@@ -85,10 +112,12 @@ def menu_opcion_ver_elemento_por_categoria(): #menu_opcion_ver_elemento_por_cate
 4. Regresar al Menú Principal
 ===========================================
           """)
-    opc = input(())
+    opc = input()
+    if opc == "3":
+        findAll_pe()  # Llama a la función para ver todos los elementos de música
     return opc
 
-def menu_opcion_guardar_y_cargar_coleccion(): #menu_opcion_guardar_y_cargar_coleccion
+def menu_opcion_guardar_y_cargar_coleccion():  # Guardar y cargar colección
     print("""
 ===========================================
         Guardar y Cargar Colección
@@ -99,5 +128,5 @@ def menu_opcion_guardar_y_cargar_coleccion(): #menu_opcion_guardar_y_cargar_cole
 3. Regresar al Menú Principal
 ===========================================
           """)
-    opc = input(())
+    opc = input()
     return opc
