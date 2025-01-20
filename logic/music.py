@@ -1,32 +1,20 @@
 import json
 
-class Music:
-    def __init__(self, title, artist, genre, rating=None):
-        self.title = title
-        self.artist = artist
-        self.genre = genre
-        self.rating = rating
+def findAll():
+    with open("data/music.json", "r", encoding="utf-8") as file :
+        data = file.read()
+        convertBooks = json.loads(data)
+        return convertBooks
 
-    def to_dict(self):
-        return {
-            "title": self.title,
-            "artist": self.artist,
-            "genre": self.genre,
-            "rating": self.rating
-        }
+def addSong(formulary):
+    data = findAll()
+    data.append(formulary)
+    return saveAll(data)
 
-    @staticmethod
-    def from_dict(data):
-        return Music(data['title'], data['artist'], data['genre'], data.get('rating'))
-
-def save_music(music, filepath='data/music.json'):
-    with open(filepath, 'w') as file:
-        json.dump([item.to_dict() for item in music], file, indent=4)
-
-def load_music(filepath='data/music.json'):
-    try:
-        with open(filepath, 'r') as file:
-            data = json.load(file)
-            return [Music.from_dict(item) for item in data]
-    except FileNotFoundError:
-        return []
+def saveAll(data):
+    with open("data/music.json", "w", encoding="utf-8") as file:
+        str(data).encode('utf-8')
+        convertJSON = json.dumps(data, indent=4, ensure_ascii=False)
+        file.write(convertJSON)
+        return "Se modifico el archivo music.json"
+    

@@ -5,7 +5,6 @@
       "autor": "Francis Ford Coppola",
       "genero": "Crimen",
       "categoria": "Drama",
-      "repositorio": "IMDb",
       "valoracion": 4.9
     },
     {
@@ -14,7 +13,6 @@
       "autor": "James Cameron",
       "genero": "Romance",
       "categoria": "Drama histórico",
-      "repositorio": "Rotten Tomatoes",
       "valoracion": 4.8
     },
     {
@@ -23,7 +21,6 @@
       "autor": "Christopher Nolan",
       "genero": "Acción",
       "categoria": "Superhéroes",
-      "repositorio": "Box Office Mojo",
       "valoracion": 4.7
     },
     {
@@ -32,7 +29,6 @@
       "autor": "Bong Joon-ho",
       "genero": "Thriller",
       "categoria": "Drama social",
-      "repositorio": "Cinepolis",
       "valoracion": 4.9
     }
   ]

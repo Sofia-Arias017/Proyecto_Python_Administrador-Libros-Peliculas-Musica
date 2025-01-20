@@ -5,7 +5,6 @@
       "autor": "Queen",
       "genero": "Rock",
       "categoria": "Clásico",
-      "repositorio": "Spotify",
       "valoracion": 4.9
     },
     {
@@ -14,7 +13,6 @@
       "autor": "The Weeknd",
       "genero": "Pop",
       "categoria": "Electropop",
-      "repositorio": "Apple Music",
       "valoracion": 4.8
     },
     {
@@ -23,7 +21,6 @@
       "autor": "John Lennon",
       "genero": "Pop",
       "categoria": "Clásico",
-      "repositorio": "YouTube Music",
       "valoracion": 4.9
     },
     {
@@ -32,7 +29,6 @@
       "autor": "Shakira",
       "genero": "Latino",
       "categoria": "Reguetón/Pop",
-      "repositorio": "Deezer",
       "valoracion": 4.7
     }
   ]
