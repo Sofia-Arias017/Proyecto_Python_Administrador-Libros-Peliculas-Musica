@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "titulo": "El Padrino",
+      "autor": "Francis Ford Coppola",
+      "genero": "Crimen",
+      "categoria": "Drama",
+      "repositorio": "IMDb",
+      "valoracion": 4.9
+    },
+    {
+      "id": 2,
+      "titulo": "Titanic",
+      "autor": "James Cameron",
+      "genero": "Romance",
+      "categoria": "Drama histórico",
+      "repositorio": "Rotten Tomatoes",
+      "valoracion": 4.8
+    },
+    {
+      "id": 3,
+      "titulo": "El Caballero Oscuro",
+      "autor": "Christopher Nolan",
+      "genero": "Acción",
+      "categoria": "Superhéroes",
+      "repositorio": "Box Office Mojo",
+      "valoracion": 4.7
+    },
+    {
+      "id": 4,
+      "titulo": "Parásitos",
+      "autor": "Bong Joon-ho",
+      "genero": "Thriller",
+      "categoria": "Drama social",
+      "repositorio": "Cinepolis",
+      "valoracion": 4.9
+    }
+  ]
+  

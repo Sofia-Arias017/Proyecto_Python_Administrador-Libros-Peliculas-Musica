@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "titulo": "Bohemian Rhapsody",
+      "autor": "Queen",
+      "genero": "Rock",
+      "categoria": "Clásico",
+      "repositorio": "Spotify",
+      "valoracion": 4.9
+    },
+    {
+      "id": 2,
+      "titulo": "Blinding Lights",
+      "autor": "The Weeknd",
+      "genero": "Pop",
+      "categoria": "Electropop",
+      "repositorio": "Apple Music",
+      "valoracion": 4.8
+    },
+    {
+      "id": 3,
+      "titulo": "Imagine",
+      "autor": "John Lennon",
+      "genero": "Pop",
+      "categoria": "Clásico",
+      "repositorio": "YouTube Music",
+      "valoracion": 4.9
+    },
+    {
+      "id": 4,
+      "titulo": "Hips Don't Lie",
+      "autor": "Shakira",
+      "genero": "Latino",
+      "categoria": "Reguetón/Pop",
+      "repositorio": "Deezer",
+      "valoracion": 4.7
+    }
+  ]
+  
