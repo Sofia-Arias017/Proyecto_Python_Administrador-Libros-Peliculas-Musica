@@ -33,7 +33,7 @@ while validacion:
         case 4:
             editarElemento()
         case 5:
-            eliminarElemento()
+            eliminarElemento(coleccion)
         case 6:
             verElementoCategoria()
         case 7:

@@ -6,21 +6,21 @@
         "valoracion": "9.3",
         "categoria": "Clásicos del Cine",
         "id": "3001"
-      },
-      {
+    },
+    {
         "titulo": "The Godfather",
         "autor": "Francis Ford Coppola",
         "genero": "Crimen, Drama",
         "valoracion": "9.2",
         "categoria": "Cine de Gangsters",
         "id": "3002"
-      },
-      {
+    },
+    {
         "titulo": "Inception",
         "autor": "Christopher Nolan",
         "genero": "Ciencia Ficción, Thriller",
         "valoracion": "8.8",
         "categoria": "Cine de Ciencia Ficción",
         "id": "3003"
-      }
+    }
 ]

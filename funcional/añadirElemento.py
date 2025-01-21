@@ -152,7 +152,7 @@ def menu_elemento():
         case _:
                 print('Opcion Invalida')
 def eliminar(coleccion, tipoJson, ruta, tipo, texto):
-    datos = cargar(ruta)
+    datos = abrirArchivo(ruta)
     nombre = input("Ingrese el nombre " + texto)
 
 #Buscar en el archivo JSON y eliminar
