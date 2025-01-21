@@ -45,6 +45,26 @@ def buscarAutor():
     print('No se ha encontrado.')
     pressEnter()
 
+def buscarGenero():
+    titulo = input('Escribe el Genero a buscar :').lower()
+    for colec in coleccion['libros']:
+        if titulo == colec["genero"]:
+            print(tabulate([colec], headers="keys", tablefmt="grid"))
+            pressEnter()
+            return
+    for colec in coleccion['musica']:
+        if titulo == colec["genero"]:
+            print(tabulate([colec], headers="keys", tablefmt="grid"))
+            pressEnter()
+            return
+    for colec in coleccion['peliculas']:
+        if titulo == colec["genero"]:
+            print(tabulate([colec], headers="keys", tablefmt="grid"))
+            pressEnter()
+            return
+    print('No se ha encontrado.')
+    pressEnter()
+
 def buscarElemento():
     while True:
         print(buscarElementoDiseño)
@@ -55,9 +75,9 @@ def buscarElemento():
             case 2:
                  buscarAutor()
             case 3:
-                 #buscarTitulo()
-                pass
+                 buscarGenero()
             case 4:
+                break
                 pressEnter()
             case _:
                 print('Opcion Invalida')
