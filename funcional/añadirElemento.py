@@ -83,6 +83,7 @@ def añadirElemento(libros, musica, peliculas, coleccion):
                 añadirMusica(musica, coleccion)
             case 4:
                 pressEnter()
+                break
             case _:
                 print('Opcion Invalida')
 def ver_elementos():

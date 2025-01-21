@@ -7,12 +7,16 @@
             "valoracion": "dfb",
             "categoria": "dkv",
             "id": "vjkdf"
+        },
+        {
+            "titulo": "hgfds",
+            "autor": "gfds",
+            "genero": "fd",
+            "valoracion": "3",
+            "categoria": "gfd",
+            "id": "1508"
         }
     ],
-    "musica": [
-
-    ],
-    "peliculas": [
-        
-    ]
+    "musica": [],
+    "peliculas": []
 }

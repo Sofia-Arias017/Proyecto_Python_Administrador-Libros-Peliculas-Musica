@@ -27,8 +27,7 @@ while validacion:
         case 2:
             menu_elemento()
         case 3:
-            #scarELemento()
-            pass
+            buscarElemento()
         case 4:
             #editarELemento()
             pass
@@ -39,7 +38,7 @@ while validacion:
             #verELementoCategoria()
             pass
         case 7:
-            guardarCargar()
+            saveLoadElement(libros, peliculas, musica, coleccion)
         case 8:
             print('Chaooo')
             validacion = False
