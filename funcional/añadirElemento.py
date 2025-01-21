@@ -47,6 +47,28 @@ def añadirMusica(musica, coleccion):
     coleccion["musica"].append(g)
 
 
+def añadirPelicula(peliculas, coleccion):
+    titulo = input('Escriba el titulo de la pelicula:').lower()
+    autor = input('Escriba el nombre del director :').lower()
+    genero = input('Escriba el genero de ñla pelicula :').lower()
+    valor = getInt('Ingrese la puntuacion de la pelicula del (1-5) :')
+    valoracion = str(valor)
+    categoria = input('Escriba una categoria para la pelicula :').lower()
+    id = IdDefault()
+
+    g = {
+        "titulo": titulo,
+        "autor": autor,
+        "genero": genero,
+        "valoracion": valoracion,
+        "categoria": categoria,
+        "id": id
+    }
+    pressEnter()
+    peliculas.append(g)
+    coleccion["peliculas"].append(g)
+
+
 def añadirElemento(libros, musica, peliculas, coleccion):
     while True:
         print(añadirElementoDiseño)
@@ -55,11 +77,9 @@ def añadirElemento(libros, musica, peliculas, coleccion):
             case 1:
                 añadirLibros(libros, coleccion)
             case 2:
-                #añadirPelicula()
-                pass
+                añadirPelicula(peliculas, coleccion)
             case 3:
-                #añadirMusica()
-                pass
+                añadirMusica(musica, coleccion)
             case 4:
                 pressEnter()
             case _:
