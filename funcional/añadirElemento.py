@@ -1,5 +1,6 @@
 from funciones.funcion import * 
 from diseño.design import * 
+from tabulate import tabulate 
 
 
 
@@ -84,3 +85,65 @@ def añadirElemento(libros, musica, peliculas, coleccion):
                 pressEnter()
             case _:
                 print('Opcion Invalida')
+def ver_elementos():
+    print("""
+    ===============================
+          ver todo los elementos
+    ===============================
+          1. libros
+          2. musica
+          3. peliculas
+          4. salir
+    ===============================
+    """)
+    opc2 = input("")
+    match opc2:
+        case "1":
+            RUTA_BOOK()
+        case "2":
+            RUTA_MUSIC()
+        case "3":
+            RUTA_MOVIES()  # Added parentheses to call the function
+        case "4":
+            print("pon enter para continuar")
+        case _:
+            print("Esta opción no es válida")
+
+
+def buscar(ruta, campo, valor):
+    data = abrirArchivo(ruta)  # Assuming this function exists
+    found_items = list(filter(lambda item: campo in item and valor.lower() in item[campo].lower(), data))
+    
+    if found_items:
+        print(f"Se encontraron resultados para '{valor}' en el campo '{campo}':")
+        print(tabulate(found_items, headers="keys", tablefmt="grid", numalign="center", showindex="always"))
+    else:
+        print(f"No se encontraron resultados para '{valor}' en el campo '{campo}'.")
+
+def menu_elemento():
+    print("""
+    ===============================
+          ver todo los elementos
+    ===============================
+          1. libros
+          2. musica
+          3. peliculas
+          4. salir
+    ===============================
+ """)
+    opc_3 = input("")
+    match opc_3:
+        case "1":
+            titulo = input("INGRESA EL TITULO DLE LIBRO: ")
+            buscar(RUTA_BOOK, "titulo", titulo)
+            pressEnter()
+        case "2":
+            titulo = input("INGRESA EL TITULO DE LA CANCION: ")
+            buscar(RUTA_MUSIC, "titulo", titulo)
+            pressEnter()
+        case "3":
+            titulo = input("INGRESA EL TITULO DE LA PELICULA: ")
+            buscar(RUTA_MOVIES, "titulo", titulo)
+            pressEnter()
+
+    
