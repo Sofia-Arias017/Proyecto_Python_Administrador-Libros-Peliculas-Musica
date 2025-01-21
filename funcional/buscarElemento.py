@@ -78,7 +78,6 @@ def buscarElemento():
                  buscarGenero()
             case 4:
                 break
-                pressEnter()
             case _:
                 print('Opcion Invalida')
 

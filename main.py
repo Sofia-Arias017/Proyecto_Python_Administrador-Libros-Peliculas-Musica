@@ -2,6 +2,7 @@ from diseño.design import *
 from funciones.funcion import *
 from importa import *
 from datos.importJSON import *
+from funcional.añadirElemento import *
 
 validacion = True
 
@@ -25,15 +26,13 @@ while validacion:
         case 1:
             añadirElemento(libros, musica, peliculas, coleccion)
         case 2:
-            menu_elemento()
+             menu_elemento()
         case 3:
             buscarElemento()
         case 4:
-            #editarELemento()
-            pass
+            editarElemento()
         case 5:
-            #eliminarELemento()
-            pass
+            eliminarElemento()
         case 6:
             #verELementoCategoria()
             pass

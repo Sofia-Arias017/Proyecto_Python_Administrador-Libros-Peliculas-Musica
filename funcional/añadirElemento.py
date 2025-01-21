@@ -146,5 +146,59 @@ def menu_elemento():
             titulo = input("INGRESA EL TITULO DE LA PELICULA: ")
             buscar(RUTA_MOVIES, "titulo", titulo)
             pressEnter()
+        case "4":
+            return
+        case _:
+                print('Opcion Invalida')
+def eliminar(coleccion, tipoJson, ruta, tipo, texto):
+    datos = cargar(ruta)
+    nombre = input("Ingrese el nombre " + texto)
 
+#Buscar en el archivo JSON y eliminar
+    for A in datos:
+        if A[tipoJson] == nombre:  # Se debe usar A para acceder al objeto
+            datos.remove(A)  # Eliminar el objeto del JSON
+            print("Elemento eliminado con éxito del archivo JSON.")
+            # Guardar los cambios en el archivo JSON
+            with open(ruta, 'w') as f:
+                json.dump(datos, f, indent=4)
+            return datos
+
+#Buscar en la colección y eliminar
+    for B in coleccion[tipo]:
+        if B[tipo] == nombre:  # Se debe usar B para acceder al objeto
+            coleccion[tipo].remove(B)  # Eliminar el objeto de la colección
+            print("Elemento eliminado con éxito de la colección.")
+            return coleccion
+
+#Si no se encuentra el nombre
+    print(" incorrecto o no encontrado.")
+    return datos
+
+def  eliminarElemento(coleccion):
+    print("""
+     ===============================
+          ver todo los elementos
+    ===============================
+          1. libros
+          2. musica
+          3. peliculas
+          4. salir
+    ===============================
+          """)
+    opc_2 = input("")
+    match opc_2:
+        case "1":
+             datos = eliminar(coleccion,  "titulo", RUTA_BOOK, "libros", "del titulo")
+             guardar = (datos, RUTA_BOOK)
     
+        case "2":
+             datos = eliminar(coleccion,  "titulo", RUTA_MUSIC, "musica", "del titulo")
+             guardar = (datos, RUTA_MUSIC)
+        case "3":
+             datos = eliminar(coleccion,  "titulo", RUTA_MOVIES, "pelicula", "del titulo")
+             guardar = (datos, RUTA_MOVIES)
+        case "4":
+            return
+        case _:
+                print('Opcion Invalida')
