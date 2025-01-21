@@ -1,18 +1,26 @@
 [
     {
-        "titulo": "fds",
-        "autor": "bvc",
-        "genero": "df",
-        "valoracion": "dfb",
-        "categoria": "dkv",
-        "id": "vjkdf"
-    },
-    {
-        "titulo": "hgfds",
-        "autor": "gfds",
-        "genero": "fd",
-        "valoracion": "3",
-        "categoria": "gfd",
-        "id": "1508"
-    }
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "genero": "Distopía, Ciencia Ficción",
+        "valoracion": "4.8",
+        "categoria": "Ficción",
+        "id": "1001"
+      },
+      {
+        "titulo": "Cien Años de Soledad",
+        "autor": "Gabriel García Márquez",
+        "genero": "Realismo Mágico",
+        "valoracion": "4.9",
+        "categoria": "Literatura Latinoamericana",
+        "id": "1002"
+      },
+      {
+        "titulo": "El Señor de los Anillos",
+        "autor": "J.R.R. Tolkien",
+        "genero": "Fantasía",
+        "valoracion": "4.7",
+        "categoria": "Fantasía Épica",
+        "id": "1003"
+      }
 ]

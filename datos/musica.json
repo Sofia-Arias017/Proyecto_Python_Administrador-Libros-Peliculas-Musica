@@ -1,10 +1,26 @@
 [
     {
-        "titulo": "igual",
-        "autor": "penyair",
-        "genero": "rap",
-        "valoracion": "5",
-        "categoria": "",
-        "id": "4354"
-    }
+        "titulo": "Bohemian Rhapsody",
+        "autor": "Queen",
+        "genero": "Rock",
+        "valoracion": "4.9",
+        "categoria": "Clásicos del Rock",
+        "id": "2001"
+      },
+      {
+        "titulo": "Blinding Lights",
+        "autor": "The Weeknd",
+        "genero": "Pop",
+        "valoracion": "4.8",
+        "categoria": "Pop Moderno",
+        "id": "2002"
+      },
+      {
+        "titulo": "Imagine",
+        "autor": "John Lennon",
+        "genero": "Rock, Paz",
+        "valoracion": "4.7",
+        "categoria": "Himnos de Paz",
+        "id": "2003"
+      }
 ]
