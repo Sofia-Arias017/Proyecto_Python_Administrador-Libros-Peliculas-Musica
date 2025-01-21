@@ -1,6 +1,7 @@
 from funciones.funcion import * 
 from diseño.design import * 
 from tabulate import tabulate 
+from datos.importJSON import *
 
 
 
@@ -202,3 +203,78 @@ def  eliminarElemento(coleccion):
             return
         case _:
                 print('Opcion Invalida')
+
+from tabulate import tabulate
+
+def tableElementsByBookCategory():
+    dataBooks = abrirArchivo(RUTA_BOOK)
+    while True:  # Bucle para permitir buscar más elementos hasta que el usuario decida salir
+        findElement = input("Ingrese la categoria a buscar, ejemplo (Aventura juvenil): ").lower()
+        # Filtrar elementos que coincidan con la categoría
+        found = list(filter(lambda element: element.get("categoria").lower() == findElement, dataBooks))
+        if found:
+            print(tabulate(found, headers="keys", tablefmt="heavy_grid", numalign="center"))
+        else:
+            print("No se encontró ninguna coincidencia")
+        
+        # Preguntar al usuario si desea buscar más elementos
+        if input("¿Desea buscar más elementos? (s/n): ").lower() == "n":
+            break  # Salir del bucle si el usuario ingresa "n"
+
+def tableElementsByMusicCategory():
+    dataMusic = abrirArchivo(RUTA_MUSIC)
+    while True:  # Bucle para permitir buscar más elementos hasta que el usuario decida salir
+        findElement = input("Ingrese la categoria a buscar, ejemplo (Aventura juvenil): ").lower()
+        # Filtrar elementos que coincidan con la categoría
+        found = list(filter(lambda element: element.get("categoria").lower() == findElement, dataMusic))
+        if found:
+            print(tabulate(found, headers="keys", tablefmt="heavy_grid", numalign="center"))
+        else:
+            print("No se encontró ninguna coincidencia")
+        
+        # Preguntar al usuario si desea buscar más elementos
+        if input("¿Desea buscar más elementos? (s/n): ").lower() == "n":
+            break  # Salir del bucle si el usuario ingresa "n"
+
+def tableElementsByMovieCategory():
+    dataMovies = abrirArchivo(RUTA_MOVIES)
+    while True:  # Bucle para permitir buscar más elementos hasta que el usuario decida salir
+        findElement = input("Ingrese la categoria a buscar, ejemplo (Aventura juvenil): ").lower()
+        # Filtrar elementos que coincidan con la categoría
+        found = list(filter(lambda element: element.get("categoria").lower() == findElement, dataMovies))
+        if found:
+            print(tabulate(found, headers="keys", tablefmt="heavy_grid", numalign="center"))
+        else:
+            print("No se encontró ninguna coincidencia")
+        
+        # Preguntar al usuario si desea buscar más elementos
+        if input("¿Desea buscar más elementos? (s/n): ").lower() == "n":
+            break  # Salir del bucle si el usuario ingresa "n"
+
+
+def verElementoCategoria():  # menú_elementocategoria
+    while True:
+        print("""
+===========================================
+        Ver Elementos por Categoría
+===========================================
+¿Qué categoría deseas ver?
+1. Ver Libros
+2. Ver Películas
+3. Ver Música
+4. Regresar al Menú Principal
+===========================================
+""")
+        opc = input("---> ")
+
+        if opc == "1":
+            tableElementsByBookCategory()
+        elif opc == "2":
+            tableElementsByMovieCategory()
+        elif opc == "3":
+            tableElementsByMusicCategory()
+        elif opc == "4":
+            print("Regresando al menú principal...")
+            return  # Regresar al menú principal
+        else:
+            print("Error: Opción fuera de rango o inválida. Por favor, elige una opción válida.")

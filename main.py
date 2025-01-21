@@ -4,6 +4,7 @@ from importa import *
 from datos.importJSON import *
 from funcional.añadirElemento import *
 
+
 validacion = True
 
 libros = []
@@ -34,8 +35,7 @@ while validacion:
         case 5:
             eliminarElemento()
         case 6:
-            #verELementoCategoria()
-            pass
+            verElementoCategoria()
         case 7:
             saveLoadElement(libros, peliculas, musica, coleccion)
         case 8:

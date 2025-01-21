@@ -2,6 +2,7 @@ from funciones.funcion import *
 from diseño.design import *
 
 
+
 coleccion = abrirArchivo(RUTA_COLECCION)
 booksSave = abrirArchivo(RUTA_BOOK)
 musicSave = abrirArchivo(RUTA_MUSIC)

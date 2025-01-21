@@ -1,5 +1,7 @@
 from funciones.funcion import *
 from diseño.design import *
+from tabulate import tabulate 
+from datos.importJSON import * 
 
 
 def loadColection():
