@@ -17,6 +17,24 @@
             "id": "1508"
         }
     ],
-    "musica": [],
-    "peliculas": []
+    "musica": [
+        {
+            "titulo": "igual",
+            "autor": "penyair",
+            "genero": "rap",
+            "valoracion": "5",
+            "categoria": "",
+            "id": "4354"
+        }
+    ],
+    "peliculas": [
+        {
+            "titulo": "buscando a nemo",
+            "autor": "vsd",
+            "genero": "vs",
+            "valoracion": "5",
+            "categoria": "csd",
+            "id": "6863"
+        }
+    ]
 }
