@@ -39,8 +39,7 @@ while validacion:
             #verELementoCategoria()
             pass
         case 7:
-            #guardarCargar()
-            pass
+            guardarCargar()
         case 8:
             print('Chaooo')
             validacion = False
